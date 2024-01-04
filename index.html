@@ -6,35 +6,64 @@
         <link rel="stylesheet" href="style.css">
     </Head>
     <Body>
-        <nav>
-            <img src="images/odin-recipes-logo.png" alt="Odin Recipes Logo">
+        <nav class="navbar">
+            <img class="logo" src="images/odin-recipes-logo.png" alt="Odin Recipes Logo">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </nav>
-        <h1>Odin Recipes</h1>
-        <h2>Forget frozen flatbreads! Odin Recipes unleashes a dough-nbelievable world of pizza possibilities, one slice at a time.</h2>
-        <img src="images/hand-holding-pizza.png">
-        <h2>Recipes</h2>
-        <img src="images/chicken-alredo-pizza.jpg" alt="Chicken Alfredo Pizza">
-        <h3>Chicken Alfredo Pizza</h3>
-        <p>This Alfredo pizza recipe combines two of my favorites: chicken and pizza.</p>
-        <img src="images/easy-tortilla-pizza.jpg" alt="Easy Tortilla Pizza">
-        <h3>Easy Tortilla Pizza</h3>
-        <p>This tortilla pizza is extremely easy to make. It is light enough to be a snack, serves well as an appetizer, or is so good that it can be devoured alone! You can use any sort of topping variation. The one below is the classic way I usually prepare it but feel free to experiment.</p>
-        <img src="images/mexican-pizza.jpg" alt="Mexican Pizza">
-        <h3>Mexican Pizza</h3>
-        <p>This Mexican pizza recipe layers my specially seasoned ground beef and refried beans between two crisp tortillas. Top with salsa, cheese, tomatoes, and jalapeño for incredible flavor in every bite!</p>
-        <img src="images/pesto-pizza.jpg" alt="Pesto Pizza">
-        <h3>Pesto Pizza</h3>
-        <p>Pesto pizza is a great alternative to your regular pizza.</p>
-        <h2>About Us</h2>
-        <p>We woke up one morning covered in flour and pepperoni grease, realizing we'd dreamt up enough pizza magic to fill a library (or an extra-large pie). Thus, Odin Recipes was born, a digital dough-main where we share our obsession with all things crust, cheese, and toppings - so fire up your ovens, because the pizza gods have spoken!</p>
-        <img src="images/pizza-on-table.jpeg" alt="Pizza on Table">
-        <h2>Contact Us</h2>
-        <p>+1-349-874-ODIN</p>
+        <div id="intro">
+            <div class="container">
+                <h1 id="home">ODIN RECIPES</h1>
+                <h2>Forget frozen flatbreads! Odin Recipes unleashes a dough-nbelievable world of pizza possibilities, one slice at a time.</h2>
+            </div>
+        </div>
+        <h2 id="recipes" class="recipe-section-heading">Recipes</h2>
+        <div class="recipe-container">
+            <a href="recipes/chicken-alfredo-pizza.html">
+                <div class="recipe-showcase">
+                    <img class="recipe-snapshot" src="images/chicken-alredo-pizza.jpg" alt="Chicken Alfredo Pizza">
+                    <h3 class="title">Chicken Alfredo Pizza</h3>
+                    <p class="background-info">This Alfredo pizza recipe combines two of my favorites: chicken and pizza.</p>
+                </div>
+            </a>
+            <a href="recipes/easy-tortilla-pizza.html">
+                <div class="recipe-showcase">
+                    <img class="recipe-snapshot" src="images/easy-tortilla-pizza.jpg" alt="Easy Tortilla Pizza">
+                    <h3 class="title">Easy Tortilla Pizza</h3>
+                    <p class="background-info">This tortilla pizza is extremely easy to make. It is light enough to be a snack, serves well as an appetizer, or is so good that it can be devoured alone! You can use any sort of topping variation. The one below is the classic way I usually prepare it but feel free to experiment.</p>
+                </div>
+            </a>
+            <a href="recipes/mexican-pizza.html">
+                <div class="recipe-showcase">
+                    <img class="recipe-snapshot" src="images/mexican-pizza.jpg" alt="Mexican Pizza">
+                    <h3 class="title">Mexican Pizza</h3>
+                    <p class="background-info">This Mexican pizza recipe layers my specially seasoned ground beef and refried beans between two crisp tortillas. Top with salsa, cheese, tomatoes, and jalapeño for incredible flavor in every bite!</p>
+                </div>
+            </a>
+            <a href="recipes/pesto-pizza.html">
+                <div class="recipe-showcase">
+                    <img class="recipe-snapshot" src="images/pesto-pizza.jpg" alt="Pesto Pizza">
+                    <h3 class="title">Pesto Pizza</h3>
+                    <p class="background-info">Pesto pizza is a great alternative to your regular pizza.</p>
+                </div>
+            </a>
+        </div>
+        <div class="about-us-container">
+            <div class="container">
+                <h2 id="about-us">About Us</h2>
+                <p>We woke up one morning covered in flour and pepperoni grease, realizing we'd dreamt up enough pizza magic to fill a library (or an extra-large pie). Thus, Odin Recipes was born, a digital dough-main where we share our obsession with all things crust, cheese, and toppings - so fire up your ovens, because the pizza gods have spoken!</p>
+            </div>
+            <div class="container">
+                <img class="head-shot" src="images/pizza-on-table.jpeg" alt="Pizza on Table">
+            </div>
+        </div>
+        <div class="footer">
+            <h2 id="contact-us">Contact Us</h2>
+            <p>+1-349-874-ODIN</p>
+        </div>
     </Body>
 </html>
