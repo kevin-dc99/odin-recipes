@@ -1,11 +1,7 @@
 body {
     font-family: 'Sans Serif', 'Times New Roman', Ariel;
-    text-align: justify;
-}
-
-img {
-    width: 500px;
-    height: auto;
+    background-color: rgb(241, 165, 23);
+    margin: 0px;
 }
 
 p,
@@ -14,15 +10,144 @@ li {
     font-size: 18px;
 }
 
-.recipe {
-    margin: auto;
-    width: 500px;
-    border: 3px solid red;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: red;
+.navbar {
+    display: flex;
+    background-color: rgb(1, 58, 1);
+    padding: 2%;
+    align-items: center;
+    width: auto;
 }
 
-#Title-Home {
+.logo {
+    width: auto;
+    height: 125px;
+    padding-left: 2%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 auto;
+    gap: 1em;
+    
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 14px;
+    display: block;
     text-align: center;
+    font-size: 25px;
+} 
+
+#intro {
+    background: url(images/hand-holding-pizza.png) right no-repeat;
+    height: 500px;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    padding: 5%;
+    width: 45%;
+}
+
+h1 {
+    font-size: 50px;
+    color: rgb(1, 58, 1);
+}
+
+h2 {
+    font-size: 36px;
+    color: rgb(1, 55, 1);
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(1, 52, 1);
+}
+
+.recipe-section-heading {
+    text-align: center;
+    margin: 25px auto 15px auto;
+}
+
+.recipe-container{
+    padding: 1% 7% 0 7%;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-flow: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.recipe-container a{
+    text-decoration: none;
+}
+
+.recipe-showcase{
+    width: 400px;
+}
+
+.recipe-showcase .recipe-snapshot{
+    height: 250px;
+    width: 400px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.recipe-showcase .title{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    position: relative;
+    height: 32px;
+    padding: 5%;
+    margin-top: -33px;
+}
+
+.recipe-showcase .background-info{
+    background-color: white;
+    color: black;
+    text-align: justify;
+    font-size: 20px;
+    padding: 7%;
+    margin-top: -20px;
+    height: 142px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.about-us-container {
+    padding: 1% 5% 0 5%;
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-us-container .head-shot {
+    height: 450px;
+    border-radius: 50px;
+}
+
+.about-us-container .container {
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+.recipe-subpage{
+    border-radius: 20px;
+    width: 50%;
+    margin: 2% auto;
+    background: white;
+    box-shadow: 25px 25px 25px;
+    padding: 2%;
 }
